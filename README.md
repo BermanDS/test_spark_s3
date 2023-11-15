@@ -1,5 +1,3 @@
-# Spark Cluster with Docker & docker-compose(2021 ver.)
-
 # General
 
 A simple spark standalone instance for testing environment purposses. A *docker-compose up* away from you solution for your spark development environment.
@@ -55,8 +53,13 @@ docker-compose up --build -d
 Please, check log file in log directory, you should see next information
 
 INFO:src.logger:{"level": "info", "time": "2023-11-15T13:02:23.745555", "tag": "s3 configs", "message": "Got next path 2021/01/30/2021-01-30.csv in bucket - bucket_name"}
+
 INFO:src.logger:{"level": "info", "time": "2023-11-15T13:02:44.455570", "tag": "spark init", "message": "Got Spark environment with version: 3.1.1."}
+
 INFO:src.logger:{"level": "info", "time": "2023-11-15T13:02:53.259242", "tag": "s3 downloading", "message": "Got 10000 records from 2021/01/30/2021-01-30.csv"}
+
 INFO:src.logger:{"level": "info", "time": "2023-11-15T13:02:56.444524", "tag": "data processing", "message": "Input data :2021/01/30/2021-01-30.csv processed raw input"}
+
 INFO:src.logger:{"level": "info", "time": "2023-11-15T13:03:21.481832", "tag": "data processing", "message": "Got 2014 records for instance: daily_agg_by_hour"}
+
 INFO:src.logger:{"level": "info", "time": "2023-11-15T13:03:21.482157", "tag": "s3 configs", "message": "Got next output path results/2021/01/30/daily_agg_20210130_SAA.csv in bucket - bucket_name"}
