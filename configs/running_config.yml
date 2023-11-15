@@ -1,0 +1,11 @@
+path_source_bucket: '{year}/{month}/{day}/{date_iso}.csv'
+path_result_bucket: 'results/{year}/{month}/{day}/daily_agg_{date_int}_{initials}.csv'
+
+
+spark_kernels: 1
+result_partitions: 1
+input_partitions: 10
+
+initials: 'SAA'
+date_run: '2021-01-30'
+

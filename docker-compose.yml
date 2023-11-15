@@ -1,0 +1,12 @@
+version: "2.1"
+
+services:
+  spark-master:
+    build: .
+    ports:
+      - "9090:8080"
+      - "7077:7077"
+    volumes:
+       - ./configs:/home/jovyan/work/configs
+       - ./log:/home/jovyan/work/log
+    command: "python main.py"
